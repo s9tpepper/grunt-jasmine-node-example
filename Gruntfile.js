@@ -9,5 +9,9 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks("grunt-jasmine-node");
 
-  grunt.registerTask("default", ["jasmine_node"]);
+  grunt.registerTask("default", function () {
+    grunt.log.subhead(">>> Use 'grunt tests' to run Jasmine specs using grunt-jasmine-node. <<<");
+  });
+
+  grunt.registerTask("tests", ["jasmine_node"]);
 };
