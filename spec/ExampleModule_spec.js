@@ -5,8 +5,10 @@ require(["../source/ExampleModule"], function (ExampleModule) {
       exampleModule = ExampleModule();
     })
 
-    it("returns an example JS module", function () {
-      expect(exampleModule.toString()).toEqual("[object ExampleModule]");
+    describe("constructor", function () {
+	  it("returns an example JS module", function () {
+        expect(exampleModule.toString()).toEqual("[object ExampleModule]");
+      });
     });
   });
 });
